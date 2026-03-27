@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moje stránka o Chicago Bulls</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <style>
+    .tab-switch, .tabs p { display: none; } /* schová inputy s classou tab-switch  a všechny odstavce uvnitř classy tabs */
+    #popis:checked ~ .popis { display: block; } /* zobrazí odstavec s classou XXX, který sousedí a následuje vybraný radio button s id XXX, XXX nahraďte vaší classou/id a zkopírujte pro každý odstavec */ 
+    #historie:checked ~ .historie { display: block; } /* zobrazí odstavec s classou XXX, který sousedí a následuje vybraný radio button s id XXX, XXX nahraďte vaší classou/id a zkopírujte pro každý odstavec */ 
+    #součastnost:checked ~ .součastnost { display: block; } /* zobrazí odstavec s classou XXX, který sousedí a následuje vybraný radio button s id XXX, XXX nahraďte vaší classou/id a zkopírujte pro každý odstavec */ 
+    img { height: 200px; float: left; margin: 12px;}
+    section { 
+        background-color: #B22222;
+        padding: 12px;
+    }
+    body { margin: 0;}
+    h1 { text-align: center; }
+    .tabs { max-width: 800px; margin: 60px auto; }
+    .tabs p {
+        padding: 12px;
+        background-color: #FF0000;
+        border: 5px solid #000000;
+        border-radius: 18px;
+        font-size: 24px;
+        line-height: 150%;
+        margin: 0;
+    }
+    .tab-head {
+        padding: 12px;
+        background-color: #FF0000;
+        border: 5px solid #000000;
+        border-radius: 18px;
+        font-size: 24px;
+        line-height: 150%;
+        position: relative;
+        top: 5px;
+        left: 20px;
+        display: inline-block;
+        border-radius: 24px 24px 0 0;
+        
+    }
+    .tab-switch:checked + label { border-bottom-color: #FF0000;  }
+
+    .cervena { background-color: #f35c5c;}
+    .gradient { height: 100px; background: linear-gradient(#B22222,#f35c5c )}
+
+    .akordeon p {
+      max-height: 0;
+      overflow: hidden;
+
+    }
+    input[type="checkbox"]:checked + p { max-height: 500px; }
+    .akordeon input { display: none;}
+    .akordeon p, .akordeon label {
+      max-width: 800px;
+      margin: auto;
+
+    }
+
+    .akordeon label {
+      background: #FF0000;
+      display: block;
+      padding: 12px;
+      cursor: pointer;
+      background: linear-gradient(#FF0000, #e66666,  #FF0000);
+    }
+    .akordeon p {
+      background: #FF0000;
+      margin: 0 auto;
+      padding: 0 12px;
+      transition: all 1s ease;
+    }
+
+
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="odkaz odkaz-zpet" href="akordeon.html">Akordeon</a>
+  <section>
+    <h1>Chicago Bulls</h1>
+      <div class="tabs">
+        <input type="radio" name="tab-switch" a class="tab-switch" id="popis">
+        <label class="tab-head" for="popis">Popis</label>
+        <input type="radio" name="tab-switch" a class="tab-switch" id="historie">
+        <label class="tab-head" for="historie">Historie</label>
+        <input type="radio" name="tab-switch" a class="tab-switch" id="součastnost">
+        <label class="tab-head" for="součastnost">Součastnost</label>
+        <p class="popis"> 
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Deng_shot_121407.jpg/1280px-Deng_shot_121407.jpg">
+          Chicago Bulls je americký profesionální basketbalový tým se sídlem v Chicagu . Bulls soutěží v Národní basketbalové asociaci (NBA) jako člen Centrální divize Východní konference . Tým byl založen 16. ledna 1966 a svůj první zápas odehrál během sezóny NBA 1966–67. Bulls sdílejí svou domácí arénu s Chicago Blackhawks z National Hockey League a hrají v novějším United Center , které nahradilo bývalý Chicago Stadium .
+        </p>
+
+        <p class="historie">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/67/Chicago_Bulls_logo.svg/250px-Chicago_Bulls_logo.svg.png">
+          Za svou historii dokázali Bulls celkem šestkrát vyhrát play-off své konference, všech šest šancí pak proměnili i ve vítězství v celé NBA:
+          Vítězství v NBA: 1991, 1992, 1993, 1996, 1997, 1998
+          Největší úspěchy tohoto klubu jsou spojeny se jménem Michaela Jordana – jednoho z nejlepších basketbalistů 20. století (podle mnohých odborníků dokonce vůbec nejlepšího).
+        </p>
+
+        <p class="součastnost">
+           <img src="https://wp.clutchpoints.com/wp-content/uploads/2025/07/Chicago-Bulls-perfect-move-in-2025-NBA-offseason.jpg?w=1200"> 
+           Od roku 1998 se Bulls nepodařilo znovu získat svůj dřívější úspěch. Klub se po roce 2000 trápil, ale na začátku roku 2010 pod vedením Derricka Rose a Joakima Noaha ukázal slibnou formu, která vyvrcholila v sezónách 2010–11 a 2011–12 , kdy měl průměr nad 0,732 . Rose si natrhl předního zkříženého vazu a následné výměny klíčových hráčů spustily přestavbu týmu, která vyvrcholila změnami v sestavách na konci roku 2010 a začátku roku 2020. Jordan a Rose vyhráli cenu pro nejužitečnějšího hráče NBA , když hráli za Bulls, celkem šestkrát, což je ocenění MVP. Bulls sdílejí rivalitu s Cleveland Cavaliers , Detroit Pistons a New York Knicks.
+        </p>
+
+      </div>
+  </section>
+  <div class="gradient"></div>
+
+<section class="cervena">
+  <div class="akordeon">
+    <label for="sit">Tvoření týmu a raný úspěch</label>
+    <input type="checkbox" id="sit">
+<p>
+  Chicago Bulls získali franšízu NBA 16. ledna 1966, čímž se stali třetím týmem NBA v historii Chicaga, po Chicago Stags (1946–1950) a Chicago Packers/Zephyrs (1961–1963). [ poznámka 1 ] Franšízu založil Dick Klein , jediný majitel v historii Bulls, který hrál profesionální basketbal, předtím hrál za Chicago American Gears . Klein působil jako generální manažer a prezident týmu během jeho formativních let. Po draftu NBA v roce 1966 mohli Bulls (trénovaní Chicagánem a bývalým All-Star NBA Johnnym „Redem“ Kerrem ) získávat hráče ze zavedených týmů. Ve své první sezóně 1966–67 odehráli Bulls svůj první zápas 15. října a zajistili si překvapivé vítězství nad St. Louis Hawks . [ 13 ] Sezónu zakončili s bilancí 33–48, což byl v té době nejlepší výsledek jakéhokoli týmu z expanze v historii NBA, a stali se prvním (a jediným) týmem z expanze, který se kvalifikoval do play-off. [ 13 ] Rozehrávač Guy Rodgers , který vedl ligu v počtu asistencí, a útočník Jerry Sloan byli jmenováni All-Stars a Kerr získal ocenění Trenér roku. 
+</p>
+  <label for="mid">Začátek éry Michaela Jordana</label>
+  <input type="checkbox" id="mid">
+<p>
+  V létě 1984 měli Bulls třetí výběr v draftu NBA 1984 , po Houstonu a Portlandu. Rockets si vybrali Hakeema Olajuwona , Blazers Sama Bowieho a Bulls střeleckého rozehrávače Michaela Jordana . Tým s novým vedením v čele s majitelem Jerrym Reinsdorfem a generálním manažerem Jerrym Krausem se rozhodl přestavět sestavu kolem Jordana. Jordan během své nováčkovské sezóny vytvořil klubové rekordy v počtu skórování (třetí v lize) a zisků míčů (čtvrtý) a dovedl Bulls zpět do play-off , kde ve čtyřech zápasech prohráli s Milwaukee Bucks . Za své úsilí byl odměněn výběrem do druhého týmu All-NBA a cenou NBA Rookie of the Year Award.
+</p>
+  <label for="last">Jordanův první odchod do důchodu a éra Scottieho Pippena</label>
+  <input type="checkbox" id="last">
+<p>
+  6. října 1993 Michael Jordan šokoval basketbalovou komunitu oznámením svého odchodu do důchodu, tři měsíce po vraždě svého otce . Bulls tehdy vedl Scottie Pippen , který se etabloval jako jeden z nejlepších hráčů ligy vítězstvím v soutěži All-Star MVP v roce 1994. Pomáhali mu Horace Grant a BJ Armstrong , kteří byli nominováni do svých prvních zápasů All-Star. Této třem asistovali Cartwright , Perdue , střelecký rozehrávač Pete Myers a chorvatský nováček v útoku Toni Kukoč . Přestože Bulls v sezóně 1993–94 vyhráli 55 zápasů, ve druhém kole play-off je Knicks v sedmi zápasech porazili po kontroverzním faulu rozhodčího Hue Hollinse v 5. zápase této série. Knicks se nakonec v tom roce dostali do finále NBA , ale prohráli s Houston Rockets . Bulls zahájili sezónu 1994–95 opuštěním svého 27 let domova, Chicago Stadium , a přestěhováním do svého současného domova, United Center.
+</p>
+
+  </div>
+
+  
+
+</section>
+
+
+</body>
+</html>

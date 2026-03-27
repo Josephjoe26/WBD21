@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <style>
+        body { font-size: 24px; }
+        #intro { 
+            color: white; 
+            background: black;
+            font-family: "Courier New";
+        }
+        #description { 
+            color: rgb(0, 0, 0); 
+            background: rgb(3, 226, 40); 
+            font-family: "monospace"
+        }
+        #features { 
+            color: rgb(255, 255, 255); 
+            background: rgb(68, 6, 236);
+            font-family: "Papyrus"; 
+            display: flex; 
+            align-items: center;
+            gap: 32px;
+        }
+        section {
+            min-height: 100vh; 
+            text-align: center; 
+            align-content: center;
+            padding-right: 4cm;
+            padding-left: 4cm;
+        }
+        body { margin: 0; }
+        nav {
+            background: darkgoldenrod;
+            color:darkred;
+            padding: 12px;
+            text-align: center;
+            position: sticky; 
+            top: 0;
+        }
+        html { scroll-behavior: smooth; }
+
+        .time { font-size: 14px; font-weight: normal; white-space: nowrap; }
+        table { margin:auto; } 
+        td { 
+            padding: 12px; 
+            border-width: 5px;
+            border-color: rgb(52, 4, 224);
+            border-style: solid;
+        }
+        table { border-collapse: collapse;
+            border-width: 5px;
+            border-color: rgb(52, 4, 224);
+            border-style: solid;
+        
+        }
+        td:hover {background: black; color: beige;}
+        table:has(td.math:hover) td.math { background-color: springgreen; }
+    
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="odkaz odkaz-zpet" href="rozvrh.html">Rozvrh</a>
+    <nav>
+        <a href="#intro">Úvod</a>
+        -
+        <a href="#description">Popis</a>
+        -
+        <a href="#features">Vlastnosti</a>
+        -
+        <a href="#timetable">Rozvrh hodin</a>
+    </nav>
+    <section id="intro">
+        <h1>Neque porro quisquam</h1>
+    </section>
+    <section id="description">
+        <p>
+            t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+        </p>
+    </section>
+    <section id="features">
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an    unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+        </p>
+        <p>
+            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+        </p>
+        <p>
+            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+        </p>
+     </section>
+<section id="timetable">
+
+    <table>
+        <tr>
+            <th>Den</th>
+            <th>
+                0.
+                <div class="time">7:15 - 8:00</div>
+            </th>
+            <th>
+                1.
+                <div class="time">8:10 - 8:55</div>
+            </th>
+            <th>
+                2.
+                <div class="time">9:05 - 9:50</div>
+            </th>
+            <th>
+                3.
+                <div class="time">10:10 - 10:55</div>
+            </th>
+            <th>
+                4.
+                <div class="time">11:05 - 11:50</div>
+            </th>
+            <th>
+                5.
+                <div class="time">11:55 - 12:40</div>
+                <div class="time">12:30 - 13:15</div>
+            </th>
+            <th>
+                6.
+                <div class="time">13:20 - 14:05</div>
+            </th>
+            <th>
+                7.
+                <div class="time">14:10 - 14:55</div>
+            </th>
+        </tr>
+
+        <tr>
+            <td>Pondělí</td>
+            <td></td>
+            <td></td>
+            <td>NJ</td>
+            <td>AJ</td>
+            <td>ICT</td>
+            <td>ICT</td>
+            <td>ČJ</td>
+            <td>TV</td>
+        </tr>
+        <tr>
+            <td>Úterý</td>
+            <td></td>
+            <td>OSF</td>
+            <td>PRA</td>
+            <td>ČJ</td>
+            <td>PEK</td>
+            <td>AJ</td>
+            <td>EKO</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Středa</td>
+            <td>NJ</td>
+            <td>UCE</td>
+            <td>UCE</td>
+            <td></td>
+            <td>EKO</td>
+            <td class="math">MAT</td>
+            <td>AJ</td>
+            <td></td>
+        </tr>
+        <tr>
+        <td>Čtvrtek</td>
+            <td>ZSV</td>
+            <td>HOZ</td>
+            <td>EKO</td>
+            <td>ČJ</td>
+            <td>PEK</td>
+            <td>AJ</td>
+            <td class="math">MAT</td>
+            <td></td>
+        </tr>
+        <tr>
+        <td>Pátek</td>
+            <td>WBD</td>
+            <td>WBD</td>
+            <td class="math">MAT</td>
+            <td>UCE</td>
+            <td>UCE</td>
+            <td></td>
+            <td>PRA</td>
+            <td></td>
+        </tr>
+
+    </table>
+</section>
+</body>
+</html>

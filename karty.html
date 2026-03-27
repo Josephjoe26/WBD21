@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moje stránka o Chicago Bulls</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <style>
+    .tab-switch, .tabs p { display: none; } /* schová inputy s classou tab-switch  a všechny odstavce uvnitř classy tabs */
+    #popis:checked ~ .popis { display: block; } /* zobrazí odstavec s classou XXX, který sousedí a následuje vybraný radio button s id XXX, XXX nahraďte vaší classou/id a zkopírujte pro každý odstavec */ 
+    #historie:checked ~ .historie { display: block; } /* zobrazí odstavec s classou XXX, který sousedí a následuje vybraný radio button s id XXX, XXX nahraďte vaší classou/id a zkopírujte pro každý odstavec */ 
+    #součastnost:checked ~ .součastnost { display: block; } /* zobrazí odstavec s classou XXX, který sousedí a následuje vybraný radio button s id XXX, XXX nahraďte vaší classou/id a zkopírujte pro každý odstavec */ 
+    img { height: 200px; float: left; margin: 12px;}
+    section { 
+        background-color: #B22222;
+        padding: 12px;
+    }
+    body { margin: 0;}
+    h1 { text-align: center; }
+    .tabs { max-width: 800px; margin: 60px auto; }
+    .tabs p {
+        padding: 12px;
+        background-color: #FF0000;
+        border: 5px solid #000000;
+        border-radius: 18px;
+        font-size: 24px;
+        line-height: 150%;
+        margin: 0;
+    }
+    .tab-head {
+        padding: 12px;
+        background-color: #FF0000;
+        border: 5px solid #000000;
+        border-radius: 18px;
+        font-size: 24px;
+        line-height: 150%;
+        position: relative;
+        top: 5px;
+        left: 20px;
+        display: inline-block;
+        border-radius: 24px 24px 0 0;
+        
+    }
+    .tab-switch:checked + label { border-bottom-color: #FF0000;  }
+
+
+
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="odkaz odkaz-zpet" href="karty.html">Karty</a>
+  <section>
+    <h1>Chicago Bulls</h1>
+      <div class="tabs">
+        <input type="radio" name="tab-switch" a class="tab-switch" id="popis">
+        <label class="tab-head" for="popis">Popis</label>
+        <input type="radio" name="tab-switch" a class="tab-switch" id="historie">
+        <label class="tab-head" for="historie">Historie</label>
+        <input type="radio" name="tab-switch" a class="tab-switch" id="součastnost">
+        <label class="tab-head" for="součastnost">Součastnost</label>
+        <p class="popis"> 
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Deng_shot_121407.jpg/1280px-Deng_shot_121407.jpg">
+          Chicago Bulls je americký profesionální basketbalový tým se sídlem v Chicagu . Bulls soutěží v Národní basketbalové asociaci (NBA) jako člen Centrální divize Východní konference . Tým byl založen 16. ledna 1966 a svůj první zápas odehrál během sezóny NBA 1966–67. Bulls sdílejí svou domácí arénu s Chicago Blackhawks z National Hockey League a hrají v novějším United Center , které nahradilo bývalý Chicago Stadium .
+        </p>
+
+        <p class="historie">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/67/Chicago_Bulls_logo.svg/250px-Chicago_Bulls_logo.svg.png">
+          Za svou historii dokázali Bulls celkem šestkrát vyhrát play-off své konference, všech šest šancí pak proměnili i ve vítězství v celé NBA:
+          Vítězství v NBA: 1991, 1992, 1993, 1996, 1997, 1998
+          Největší úspěchy tohoto klubu jsou spojeny se jménem Michaela Jordana – jednoho z nejlepších basketbalistů 20. století (podle mnohých odborníků dokonce vůbec nejlepšího).
+        </p>
+
+        <p class="součastnost">
+           <img src="https://wp.clutchpoints.com/wp-content/uploads/2025/07/Chicago-Bulls-perfect-move-in-2025-NBA-offseason.jpg?w=1200"> 
+           Od roku 1998 se Bulls nepodařilo znovu získat svůj dřívější úspěch. Klub se po roce 2000 trápil, ale na začátku roku 2010 pod vedením Derricka Rose a Joakima Noaha ukázal slibnou formu, která vyvrcholila v sezónách 2010–11 a 2011–12 , kdy měl průměr nad 0,732 . Rose si natrhl předního zkříženého vazu a následné výměny klíčových hráčů spustily přestavbu týmu, která vyvrcholila změnami v sestavách na konci roku 2010 a začátku roku 2020. Jordan a Rose vyhráli cenu pro nejužitečnějšího hráče NBA , když hráli za Bulls, celkem šestkrát, což je ocenění MVP. Bulls sdílejí rivalitu s Cleveland Cavaliers , Detroit Pistons a New York Knicks.
+        </p>
+
+      </div>
+  </section>
+
+
+</body>
+</html>

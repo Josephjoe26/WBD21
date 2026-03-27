@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galerie by Josef Teixeira</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <style>
+    body {
+        align-content: center;
+        height: 100vh;
+        margin: 0;
+    }
+    .wrapper {
+        width: 800px;
+        height: 420px;
+        border: 5px solid royalblue;
+        border-radius: 24px;
+        margin: auto;
+        background: rgb(71, 197, 255);
+        padding: 24px;
+        box-sizing: border-box;
+        display: flex;
+        gap: 24px;
+        overflow: scroll;
+    }
+    .box {
+        flex-shrink: 0;
+        border: 5px solid blue;
+        width: 320px;
+        height: 100%;
+        box-sizing: border-box;
+        border-radius: 24px;
+        background: turquoise;
+        overflow: hidden;
+    }
+    .image {
+        width: 100%;
+        height: 200px;
+    }
+    .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .content { padding: 12px; font-family: Poppins;}
+    h2 { margin: 0; margin-bottom: 8px; }
+    p { margin: 0; }
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="odkaz odkaz-zpet" href="galerie.html">Galerie</a>
+    <div class="wrapper">
+        <div class="box">
+            <div class="image">
+                <img src="https://placedog.net/400/427?id=188" alt="pejsek">
+            </div>
+            <div class="content">
+                <h2>Pejsek</h2>
+                <p>Štěně které kouše koš. Vypadá roztomile a hravě.</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="https://placedog.net/400/293?id=43" alt="pejsek">
+            </div>
+            <div class="content">
+                <h2>Pejsek</h2>
+                <p>Štěně které kouše koš. Vypadá roztomile a hravě.</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="https://placedog.net/400/427?id=58" alt="pejsek">
+            </div>
+            <div class="content">
+                <h2>Pejsek</h2>
+                <p>Štěně které kouše koš. Vypadá roztomile a hravě.</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="https://placedog.net/400/427?id=130" alt="pejsek">
+            </div>
+            <div class="content">
+                <h2>Pejsek</h2>
+                <p>Štěně které kouše koš. Vypadá roztomile a hravě.</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="https://placedog.net/400/427?id=150" alt="pejsek">
+            </div>
+            <div class="content">
+                <h2>Pejsek</h2>
+                <p>Štěně které kouše koš. Vypadá roztomile a hravě.</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="https://placedog.net/400/427?id=158" alt="pejsek">
+            </div>
+            <div class="content">
+                <h2>Pejsek</h2>
+                <p>Štěně které kouše koš. Vypadá roztomile a hravě.</p>
+            </div>
+        </div>
+    </div>    
+    
+</body>
+</html>
